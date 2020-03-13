@@ -18,6 +18,7 @@ public class LoginController {
 
     @RequestMapping(value = "/login2", method = RequestMethod.POST)
     private Login login2(@RequestBody Login login){
+
         return iLoginService.login(login.getUsername(), login.getPassword());
     }
 }
